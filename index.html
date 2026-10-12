@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Riffat Akhtar Rizky Sofyan - Profil Diri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Modern Soft Aero / Glass Neumorphism Palette */
+        body {
+            background: linear-gradient(135deg, #a5c3f7 0%, #b8daf5 35%, #c5e7f1 65%, #9ee3cc 100%);
+            background-attachment: fixed;
+            font-family: 'Segoe UI', 'Plus Jakarta Sans', -apple-system, sans-serif;
+            color: #0f172a;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Ambient Background Orbs */
+        .aero-orb-1 {
+            position: fixed;
+            top: 2%;
+            left: 2%;
+            width: 140px;
+            height: 140px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+            filter: blur(8px);
+            pointer-events: none;
+        }
+
+        .aero-orb-2 {
+            position: fixed;
+            bottom: 10%;
+            left: 22%;
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+            filter: blur(10px);
+            pointer-events: none;
+        }
+
+        .aero-orb-3 {
+            position: fixed;
+            top: 25%;
+            right: 4%;
+            width: 160px;
+            height: 160px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+            filter: blur(10px);
+            pointer-events: none;
+        }
+
+        .aero-orb-4 {
+            position: fixed;
+            bottom: 6%;
+            right: 18%;
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+            filter: blur(8px);
+            pointer-events: none;
+        }
+
+        /* Main Soft Aero Card */
+        .main-card {
+            background: linear-gradient(180deg, rgba(240, 246, 252, 0.82) 0%, rgba(220, 235, 245, 0.78) 100%);
+            border: 2px solid rgba(255, 255, 255, 0.85);
+            box-shadow: 
+                0 25px 50px -12px rgba(15, 23, 42, 0.12),
+                0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+            backdrop-filter: blur(25px);
+            border-radius: 2.2rem;
+        }
+
+        /* Sub Cards Styling */
+        .sub-card {
+            background: rgba(230, 240, 248, 0.65);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 
+                0 4px 12px rgba(0, 0, 0, 0.03),
+                0 1px 2px rgba(255, 255, 255, 0.8) inset;
+            border-radius: 1.25rem;
+        }
+
+        /* Avatar Container with Soft Aero 3D Frame */
+        .avatar-box {
+            background: linear-gradient(135deg, #a0c3f5 0%, #7db2ee 100%);
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 
+                0 10px 20px rgba(14, 116, 144, 0.15),
+                0 2px 4px rgba(255, 255, 255, 0.8) inset;
+            border-radius: 1.8rem;
+        }
+
+        /* Aero Pill Badge */
+        .aero-pill {
+            background: linear-gradient(180deg, #3280cb 0%, #1a65b0 100%);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            box-shadow: 
+                0 4px 10px rgba(26, 101, 176, 0.25),
+                0 1px 2px rgba(255, 255, 255, 0.5) inset;
+            color: #ffffff;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Icon Container */
+        .icon-box {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-center items-center p-4 sm:p-6 lg:p-8 select-none">
+
+    <div class="aero-orb-1"></div>
+    <div class="aero-orb-2"></div>
+    <div class="aero-orb-3"></div>
+    <div class="aero-orb-4"></div>
+
+    <main class="w-full max-w-md sm:max-w-lg lg:max-w-xl z-10">
+        
+        <div class="main-card p-6 sm:p-8">
+            
+            <div class="flex flex-col items-center text-center relative z-10">
+                
+                <!-- Avatar Container -->
+                <div class="relative mb-5">
+                    <div class="avatar-box w-28 h-28 sm:w-32 sm:h-32 p-1.5 flex items-center justify-center">
+                        <div class="w-full h-full rounded-[1.4rem] overflow-hidden bg-sky-100 flex items-center justify-center">
+                            <img id="profileImage" src="file:///C:/Users/Riffat/Documents/pekernalanDiri/foto.png" alt="M. Riffat Akhtar Rizky Sofyan" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='https://placehold.co/300x300/e0f2fe/0284c7?text=Foto+Profil';">
+                        </div>
+                    </div>
+                    <!-- Status Badge -->
+                    <span class="absolute bottom-1 right-1 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full shadow-sm" title="Status: Online"></span>
+                </div>
+
+                <!-- Name Title -->
+                <div class="mb-2">
+                    <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-800">
+                        M. Riffat Akhtar Rizky Sofyan
+                    </h1>
+                </div>
+
+                <!-- Class Pill -->
+                <div class="aero-pill font-mono text-xs sm:text-sm px-5 py-1.5 rounded-full mb-7 inline-block tracking-wide font-semibold">
+                    XII TKJ B • Teknik Komputer & Jaringan
+                </div>
+            </div>
+
+            <div class="mb-6 relative z-10">
+                <div class="flex items-center gap-2 mb-3 text-sky-800 font-mono text-xs sm:text-sm tracking-wider uppercase font-bold">
+                    <div class="icon-box p-1.5 rounded-lg text-sky-700">
+                        <i data-lucide="compass" class="w-4 h-4"></i>
+                    </div>
+                    <span>CITA-CITA</span>
+                </div>
+                <div class="sub-card p-4 sm:p-5">
+                    <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                        Menjadi seorang <strong class="text-slate-900 font-bold">Network Engineer & IT Infrastructure Specialist</strong> profesional yang andal, serta berkontribusi dalam pengembangan teknologi jaringan komputer modern.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mb-6 relative z-10">
+                <div class="flex items-center gap-2 mb-3 text-emerald-800 font-mono text-xs sm:text-sm tracking-wider uppercase font-bold">
+                    <div class="icon-box p-1.5 rounded-lg text-emerald-700">
+                        <i data-lucide="heart" class="w-4 h-4"></i>
+                    </div>
+                    <span>HOBI & KETERTARIKAN</span>
+                </div>
+                <div class="grid grid-cols-2 gap-3 sm:gap-4">
+                    
+                    <!-- Hobi 1: Membuat Game -->
+                    <div class="sub-card p-4 text-center flex flex-col items-center justify-center">
+                        <div class="w-12 h-12 rounded-2xl icon-box text-sky-700 flex items-center justify-center mb-2.5">
+                            <i data-lucide="gamepad-2" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-mono text-xs sm:text-sm font-bold text-slate-800">Membuat Game</span>
+                    </div>
+
+                    <!-- Hobi 2: Bermain Game -->
+                    <div class="sub-card p-4 text-center flex flex-col items-center justify-center">
+                        <div class="w-12 h-12 rounded-2xl icon-box text-emerald-700 flex items-center justify-center mb-2.5">
+                            <i data-lucide="joystick" class="w-6 h-6"></i>
+                        </div>
+                        <span class="font-mono text-xs sm:text-sm font-bold text-slate-800">Bermain Game</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="pt-4 text-center relative z-10">
+                <p class="font-mono text-xs text-slate-600 tracking-wider font-medium">
+                    M. Riffat Akhtar Rizky Sofyan • XII TKJ B • 2026
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
