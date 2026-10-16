@@ -203,7 +203,7 @@
                     <i data-lucide="cpu" class="w-4 h-4"></i> Skills & Network
                 </button>
                 <button onclick="switchTab('portfolio')" id="btn-portfolio" class="nav-tab font-mono text-xs sm:text-sm font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 cursor-pointer shadow-sm">
-                    <i data-lucide="code-2" class="w-4 h-4"></i> Hobi & Proyek
+                    <i data-lucide="code-2" class="w-4 h-4"></i> Hobi & Ketertarikan
                 </button>
             </div>
 
@@ -315,7 +315,7 @@
                 </div>
             </div>
 
-            <!-- TAB 3: PORTFOLIO & HOBBY -->
+            <!-- TAB 3: HOBI & KETERTARIKAN -->
             <div id="tab-portfolio" class="tab-content space-y-5 hidden">
                 <div>
                     <div class="flex items-center gap-2 mb-3 text-emerald-800 font-mono text-xs sm:text-sm tracking-wider uppercase font-bold">
@@ -332,7 +332,7 @@
                             </div>
                             <div>
                                 <span class="font-mono text-sm font-bold text-slate-800 block mb-0.5">Membuat Game</span>
-                                <span class="text-xs text-slate-600">Roblox Studio & Luau Programming (UI Cursors, CFrame & Dialog Logic).</span>
+                                <span class="text-xs text-slate-600">Eksplorasi logika pemrograman, desain UI interaktif, dan mekanik game.</span>
                             </div>
                         </div>
 
@@ -343,30 +343,9 @@
                             </div>
                             <div>
                                 <span class="font-mono text-sm font-bold text-slate-800 block mb-0.5">Bermain Game</span>
-                                <span class="text-xs text-slate-600">Tower Defense Simulator, Pokémon Brick Bronze & Strategy Games.</span>
+                                <span class="text-xs text-slate-600">Mengasah kemampuan berpikir kritis dan strategi dalam berbagai genre game.</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="flex items-center gap-2 mb-3 text-indigo-800 font-mono text-xs sm:text-sm tracking-wider uppercase font-bold">
-                        <div class="icon-box p-1.5 rounded-lg text-indigo-700">
-                            <i data-lucide="layout" class="w-4 h-4"></i>
-                        </div>
-                        <span>WEB DESIGN AESTHETIC</span>
-                    </div>
-                    <div class="sub-card p-4 flex items-center justify-between">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-xl icon-box text-indigo-700 flex items-center justify-center">
-                                <i data-lucide="sparkles" class="w-5 h-5"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-mono text-xs sm:text-sm font-bold text-slate-800">Frutiger Aero & Web 2.0</h4>
-                                <p class="text-xs text-slate-600">Desain antarmuka retro modern dengan sentuhan glassmorphism.</p>
-                            </div>
-                        </div>
-                        <span class="text-xs font-mono bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-bold">HTML & CSS</span>
                     </div>
                 </div>
             </div>
@@ -405,7 +384,7 @@
             // Add active class to clicked button
             document.getElementById('btn-' + tabId).classList.add('active');
             
-            // Re-initialize icons in case any rendered dynamically
+            // Re-initialize icons
             lucide.createIcons();
         }
     </script>
