@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M. Riffat Akhtar Rizky Sofyan - Profil Diri</title>
+    <title>M. Riffat Akhtar Rizky Sofyan - Profil & Portofolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,6 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
-        /* Modern Soft Aero / Glass Neumorphism Palette */
         body {
             background: linear-gradient(135deg, #a5c3f7 0%, #b8daf5 35%, #c5e7f1 65%, #9ee3cc 100%);
             background-attachment: fixed;
@@ -26,97 +25,127 @@
             position: fixed;
             top: 2%;
             left: 2%;
-            width: 140px;
-            height: 140px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 70%);
             border-radius: 50%;
-            filter: blur(8px);
+            filter: blur(12px);
             pointer-events: none;
+            animation: floatOrb 8s ease-in-out infinite alternate;
         }
 
         .aero-orb-2 {
             position: fixed;
-            bottom: 10%;
-            left: 22%;
-            width: 180px;
-            height: 180px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+            bottom: 5%;
+            left: 15%;
+            width: 220px;
+            height: 220px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 70%);
             border-radius: 50%;
-            filter: blur(10px);
+            filter: blur(15px);
             pointer-events: none;
+            animation: floatOrb 10s ease-in-out infinite alternate-reverse;
         }
 
         .aero-orb-3 {
             position: fixed;
-            top: 25%;
-            right: 4%;
-            width: 160px;
-            height: 160px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+            top: 15%;
+            right: 5%;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 70%);
             border-radius: 50%;
-            filter: blur(10px);
+            filter: blur(14px);
             pointer-events: none;
         }
 
-        .aero-orb-4 {
-            position: fixed;
-            bottom: 6%;
-            right: 18%;
-            width: 120px;
-            height: 120px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 70%);
-            border-radius: 50%;
-            filter: blur(8px);
-            pointer-events: none;
+        @keyframes floatOrb {
+            0% { transform: translateY(0px) translateX(0px); }
+            100% { transform: translateY(-20px) translateX(15px); }
         }
 
         /* Main Soft Aero Card */
         .main-card {
-            background: linear-gradient(180deg, rgba(240, 246, 252, 0.82) 0%, rgba(220, 235, 245, 0.78) 100%);
-            border: 2px solid rgba(255, 255, 255, 0.85);
-            box-shadow: 
-                0 25px 50px -12px rgba(15, 23, 42, 0.12),
-                0 0 0 1px rgba(255, 255, 255, 0.5) inset;
-            backdrop-filter: blur(25px);
-            border-radius: 2.2rem;
-        }
-
-        /* Sub Cards Styling */
-        .sub-card {
-            background: rgba(230, 240, 248, 0.65);
-            border: 1px solid rgba(255, 255, 255, 0.9);
-            box-shadow: 
-                0 4px 12px rgba(0, 0, 0, 0.03),
-                0 1px 2px rgba(255, 255, 255, 0.8) inset;
-            border-radius: 1.25rem;
-        }
-
-        /* Avatar Container with Soft Aero 3D Frame */
-        .avatar-box {
-            background: linear-gradient(135deg, #a0c3f5 0%, #7db2ee 100%);
+            background: linear-gradient(180deg, rgba(240, 246, 252, 0.85) 0%, rgba(220, 235, 245, 0.8) 100%);
             border: 2px solid rgba(255, 255, 255, 0.9);
             box-shadow: 
-                0 10px 20px rgba(14, 116, 144, 0.15),
-                0 2px 4px rgba(255, 255, 255, 0.8) inset;
-            border-radius: 1.8rem;
+                0 30px 60px -15px rgba(15, 23, 42, 0.15),
+                0 0 0 1px rgba(255, 255, 255, 0.6) inset;
+            backdrop-filter: blur(30px);
+            border-radius: 2.5rem;
+        }
+
+        /* Sub Cards & Glass Elements */
+        .sub-card {
+            background: rgba(230, 240, 248, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.95);
+            box-shadow: 
+                0 6px 16px rgba(0, 0, 0, 0.04),
+                0 1px 3px rgba(255, 255, 255, 0.8) inset;
+            border-radius: 1.25rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .sub-card:hover {
+            transform: translateY(-2px);
+            background: rgba(238, 245, 252, 0.85);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        /* Avatar Container with 3D Frame */
+        .avatar-box {
+            background: linear-gradient(135deg, #a0c3f5 0%, #7db2ee 100%);
+            border: 2px solid rgba(255, 255, 255, 0.95);
+            box-shadow: 
+                0 12px 24px rgba(14, 116, 144, 0.2),
+                0 2px 5px rgba(255, 255, 255, 0.9) inset;
+            border-radius: 2rem;
         }
 
         /* Aero Pill Badge */
         .aero-pill {
             background: linear-gradient(180deg, #3280cb 0%, #1a65b0 100%);
-            border: 1px solid rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.8);
             box-shadow: 
-                0 4px 10px rgba(26, 101, 176, 0.25),
-                0 1px 2px rgba(255, 255, 255, 0.5) inset;
+                0 4px 12px rgba(26, 101, 176, 0.3),
+                0 1px 2px rgba(255, 255, 255, 0.6) inset;
             color: #ffffff;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         }
 
         /* Icon Container */
         .icon-box {
-            background: rgba(255, 255, 255, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.9);
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.95);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Navigation Tab Buttons */
+        .nav-tab {
+            background: rgba(220, 232, 245, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            color: #334155;
+            transition: all 0.25s ease;
+        }
+
+        .nav-tab.active {
+            background: linear-gradient(180deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(200, 220, 240, 0.4);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(100, 150, 200, 0.6);
+            border-radius: 4px;
         }
     </style>
 </head>
@@ -125,84 +154,232 @@
     <div class="aero-orb-1"></div>
     <div class="aero-orb-2"></div>
     <div class="aero-orb-3"></div>
-    <div class="aero-orb-4"></div>
 
-    <main class="w-full max-w-md sm:max-w-lg lg:max-w-xl z-10">
+    <main class="w-full max-w-xl sm:max-w-2xl lg:max-w-3xl z-10 my-4">
         
-        <div class="main-card p-6 sm:p-8">
+        <div class="main-card p-6 sm:p-8 lg:p-10">
             
-            <div class="flex flex-col items-center text-center relative z-10">
-                
+            <!-- Header Profile Section -->
+            <div class="flex flex-col sm:flex-row items-center gap-6 pb-6 border-b border-white/60 mb-6">
                 <!-- Avatar Container -->
-                <div class="relative mb-5">
-                    <div class="avatar-box w-28 h-28 sm:w-32 sm:h-32 p-1.5 flex items-center justify-center">
-                        <div class="w-full h-full rounded-[1.4rem] overflow-hidden bg-sky-100 flex items-center justify-center">
+                <div class="relative shrink-0">
+                    <div class="avatar-box w-32 h-32 sm:w-36 sm:h-36 p-1.5 flex items-center justify-center">
+                        <div class="w-full h-full rounded-[1.6rem] overflow-hidden bg-sky-100 flex items-center justify-center">
                             <img id="profileImage" src="https://raw.githubusercontent.com/memeindonesiangakak2017-netizen/M.-Riffat-Akhtar-R.-S./refs/heads/main/foto.png" alt="M. Riffat Akhtar Rizky Sofyan" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='https://placehold.co/300x300/e0f2fe/0284c7?text=Foto+Profil';">
                         </div>
                     </div>
                     <!-- Status Badge -->
-                    <span class="absolute bottom-1 right-1 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full shadow-sm" title="Status: Online"></span>
+                    <span class="absolute bottom-1 right-1 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full shadow-sm animate-pulse" title="Status: Online"></span>
                 </div>
 
-                <!-- Name Title -->
-                <div class="mb-2">
-                    <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-800">
+                <!-- Bio & Title Info -->
+                <div class="text-center sm:text-left flex-1">
+                    <div class="inline-block aero-pill font-mono text-xs px-4 py-1 rounded-full mb-2 tracking-wide font-semibold">
+                        XII TKJ B • SMK 3 Perguruan Cikini
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-800 mb-2">
                         M. Riffat Akhtar Rizky Sofyan
                     </h1>
-                </div>
-
-                <!-- Class Pill -->
-                <div class="aero-pill font-mono text-xs sm:text-sm px-5 py-1.5 rounded-full mb-7 inline-block tracking-wide font-semibold">
-                    XII TKJ B • Teknik Komputer & Jaringan
-                </div>
-            </div>
-
-            <div class="mb-6 relative z-10">
-                <div class="flex items-center gap-2 mb-3 text-sky-800 font-mono text-xs sm:text-sm tracking-wider uppercase font-bold">
-                    <div class="icon-box p-1.5 rounded-lg text-sky-700">
-                        <i data-lucide="compass" class="w-4 h-4"></i>
-                    </div>
-                    <span>CITA-CITA</span>
-                </div>
-                <div class="sub-card p-4 sm:p-5">
-                    <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                        Menjadi seorang <strong class="text-slate-900 font-bold">Network Engineer & IT Infrastructure Specialist</strong> profesional yang andal, serta berkontribusi dalam pengembangan teknologi jaringan komputer modern.
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Network Engineering student & enthusiast exploring server infrastructure, routing, and game development logic.
                     </p>
+                    <div class="flex flex-wrap justify-center sm:justify-start gap-2">
+                        <span class="text-xs font-mono bg-white/70 border border-white/90 text-sky-800 px-3 py-1 rounded-lg font-semibold flex items-center gap-1">
+                            <i data-lucide="server" class="w-3.5 h-3.5"></i> Linux & BIND9
+                        </span>
+                        <span class="text-xs font-mono bg-white/70 border border-white/90 text-indigo-800 px-3 py-1 rounded-lg font-semibold flex items-center gap-1">
+                            <i data-lucide="wifi" class="w-3.5 h-3.5"></i> Cisco BGP & VLAN
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <div class="mb-6 relative z-10">
-                <div class="flex items-center gap-2 mb-3 text-emerald-800 font-mono text-xs sm:text-sm tracking-wider uppercase font-bold">
-                    <div class="icon-box p-1.5 rounded-lg text-emerald-700">
-                        <i data-lucide="heart" class="w-4 h-4"></i>
+            <!-- Navigation Tabs -->
+            <div class="grid grid-cols-3 gap-2 mb-6">
+                <button onclick="switchTab('overview')" id="btn-overview" class="nav-tab active font-mono text-xs sm:text-sm font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 cursor-pointer shadow-sm">
+                    <i data-lucide="user" class="w-4 h-4"></i> Profil
+                </button>
+                <button onclick="switchTab('skills')" id="btn-skills" class="nav-tab font-mono text-xs sm:text-sm font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 cursor-pointer shadow-sm">
+                    <i data-lucide="cpu" class="w-4 h-4"></i> Skills & Network
+                </button>
+                <button onclick="switchTab('portfolio')" id="btn-portfolio" class="nav-tab font-mono text-xs sm:text-sm font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 cursor-pointer shadow-sm">
+                    <i data-lucide="code-2" class="w-4 h-4"></i> Hobi & Proyek
+                </button>
+            </div>
+
+            <!-- TAB 1: OVERVIEW -->
+            <div id="tab-overview" class="tab-content space-y-5">
+                <!-- Cita-cita Box -->
+                <div>
+                    <div class="flex items-center gap-2 mb-2 text-sky-800 font-mono text-xs sm:text-sm tracking-wider uppercase font-bold">
+                        <div class="icon-box p-1.5 rounded-lg text-sky-700">
+                            <i data-lucide="compass" class="w-4 h-4"></i>
+                        </div>
+                        <span>CITA-CITA & MISI</span>
                     </div>
-                    <span>HOBI & KETERTARIKAN</span>
+                    <div class="sub-card p-4 sm:p-5">
+                        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
+                            Menjadi seorang <strong class="text-slate-900 font-bold">Network Engineer & IT Infrastructure Specialist</strong> profesional yang andal, serta terus berinovasi dalam perancangan arsitektur jaringan komputer modern dan sistem server yang handal.
+                        </p>
+                    </div>
                 </div>
-                <div class="grid grid-cols-2 gap-3 sm:gap-4">
-                    
-                    <!-- Hobi 1: Membuat Game -->
-                    <div class="sub-card p-4 text-center flex flex-col items-center justify-center">
-                        <div class="w-12 h-12 rounded-2xl icon-box text-sky-700 flex items-center justify-center mb-2.5">
-                            <i data-lucide="gamepad-2" class="w-6 h-6"></i>
-                        </div>
-                        <span class="font-mono text-xs sm:text-sm font-bold text-slate-800">Membuat Game</span>
-                    </div>
 
-                    <!-- Hobi 2: Bermain Game -->
-                    <div class="sub-card p-4 text-center flex flex-col items-center justify-center">
-                        <div class="w-12 h-12 rounded-2xl icon-box text-emerald-700 flex items-center justify-center mb-2.5">
-                            <i data-lucide="joystick" class="w-6 h-6"></i>
+                <!-- Quick Highlights -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="sub-card p-4 flex items-start gap-3.5">
+                        <div class="w-10 h-10 rounded-xl icon-box text-sky-700 flex items-center justify-center shrink-0 mt-0.5">
+                            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
                         </div>
-                        <span class="font-mono text-xs sm:text-sm font-bold text-slate-800">Bermain Game</span>
+                        <div>
+                            <h4 class="font-mono text-xs font-bold text-slate-800 uppercase mb-1">Pendidikan</h4>
+                            <p class="text-xs sm:text-sm text-slate-600">SMK 3 Perguruan Cikini<br>XII Teknik Komputer & Jaringan B</p>
+                        </div>
                     </div>
-
+                    <div class="sub-card p-4 flex items-start gap-3.5">
+                        <div class="w-10 h-10 rounded-xl icon-box text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+                            <i data-lucide="terminal" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-mono text-xs font-bold text-slate-800 uppercase mb-1">Keahlian Utama</h4>
+                            <p class="text-xs sm:text-sm text-slate-600">Debian Server, BIND9 DNS, Apache Web & Cisco Routing.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="pt-4 text-center relative z-10">
+            <!-- TAB 2: SKILLS & NETWORK -->
+            <div id="tab-skills" class="tab-content space-y-5 hidden">
+                <div>
+                    <div class="flex items-center gap-2 mb-3 text-sky-800 font-mono text-xs sm:text-sm tracking-wider uppercase font-bold">
+                        <div class="icon-box p-1.5 rounded-lg text-sky-700">
+                            <i data-lucide="network" class="w-4 h-4"></i>
+                        </div>
+                        <span>NETWORK & SYSTEM ADMINISTRATION</span>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div class="sub-card p-3.5 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-lg icon-box text-sky-700 flex items-center justify-center">
+                                    <i data-lucide="server" class="w-4 h-4"></i>
+                                </div>
+                                <span class="font-mono text-xs sm:text-sm font-bold text-slate-800">Debian & VirtualBox</span>
+                            </div>
+                            <span class="text-xs font-mono bg-sky-100 text-sky-800 px-2 py-0.5 rounded font-bold">Admin</span>
+                        </div>
+                        <div class="sub-card p-3.5 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-lg icon-box text-emerald-700 flex items-center justify-center">
+                                    <i data-lucide="globe" class="w-4 h-4"></i>
+                                </div>
+                                <span class="font-mono text-xs sm:text-sm font-bold text-slate-800">BIND9 & DNS Server</span>
+                            </div>
+                            <span class="text-xs font-mono bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-bold">Config</span>
+                        </div>
+                        <div class="sub-card p-3.5 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-lg icon-box text-indigo-700 flex items-center justify-center">
+                                    <i data-lucide="cpu" class="w-4 h-4"></i>
+                                </div>
+                                <span class="font-mono text-xs sm:text-sm font-bold text-slate-800">Apache Web Server</span>
+                            </div>
+                            <span class="text-xs font-mono bg-indigo-100 text-indigo-800 px-2 py-0.5 rounded font-bold">Hosting</span>
+                        </div>
+                        <div class="sub-card p-3.5 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-9 h-9 rounded-lg icon-box text-amber-700 flex items-center justify-center">
+                                    <i data-lucide="git-branch" class="w-4 h-4"></i>
+                                </div>
+                                <span class="font-mono text-xs sm:text-sm font-bold text-slate-800">Cisco BGP & VLAN</span>
+                            </div>
+                            <span class="text-xs font-mono bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-bold">Routing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-center gap-2 mb-3 text-emerald-800 font-mono text-xs sm:text-sm tracking-wider uppercase font-bold">
+                        <div class="icon-box p-1.5 rounded-lg text-emerald-700">
+                            <i data-lucide="cpu" class="w-4 h-4"></i>
+                        </div>
+                        <span>HARDWARE & MICROCONTROLLER</span>
+                    </div>
+                    <div class="sub-card p-4 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-2xl icon-box text-emerald-700 flex items-center justify-center shrink-0">
+                            <i data-lucide="cpu" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-mono text-sm font-bold text-slate-800 mb-1">Arduino Nano & Sensor Integration</h4>
+                            <p class="text-xs sm:text-sm text-slate-600">Pengembangan mikrokontroler menggunakan C++ untuk sistem otomasi lampu berbasis sensor suara (relay module).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB 3: PORTFOLIO & HOBBY -->
+            <div id="tab-portfolio" class="tab-content space-y-5 hidden">
+                <div>
+                    <div class="flex items-center gap-2 mb-3 text-emerald-800 font-mono text-xs sm:text-sm tracking-wider uppercase font-bold">
+                        <div class="icon-box p-1.5 rounded-lg text-emerald-700">
+                            <i data-lucide="heart" class="w-4 h-4"></i>
+                        </div>
+                        <span>HOBI & KETERTARIKAN</span>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                        <!-- Hobi 1 -->
+                        <div class="sub-card p-4 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl icon-box text-sky-700 flex items-center justify-center shrink-0">
+                                <i data-lucide="gamepad-2" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="font-mono text-sm font-bold text-slate-800 block mb-0.5">Membuat Game</span>
+                                <span class="text-xs text-slate-600">Roblox Studio & Luau Programming (UI Cursors, CFrame & Dialog Logic).</span>
+                            </div>
+                        </div>
+
+                        <!-- Hobi 2 -->
+                        <div class="sub-card p-4 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl icon-box text-emerald-700 flex items-center justify-center shrink-0">
+                                <i data-lucide="joystick" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="font-mono text-sm font-bold text-slate-800 block mb-0.5">Bermain Game</span>
+                                <span class="text-xs text-slate-600">Tower Defense Simulator, Pokémon Brick Bronze & Strategy Games.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex items-center gap-2 mb-3 text-indigo-800 font-mono text-xs sm:text-sm tracking-wider uppercase font-bold">
+                        <div class="icon-box p-1.5 rounded-lg text-indigo-700">
+                            <i data-lucide="layout" class="w-4 h-4"></i>
+                        </div>
+                        <span>WEB DESIGN AESTHETIC</span>
+                    </div>
+                    <div class="sub-card p-4 flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl icon-box text-indigo-700 flex items-center justify-center">
+                                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-mono text-xs sm:text-sm font-bold text-slate-800">Frutiger Aero & Web 2.0</h4>
+                                <p class="text-xs text-slate-600">Desain antarmuka retro modern dengan sentuhan glassmorphism.</p>
+                            </div>
+                        </div>
+                        <span class="text-xs font-mono bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full font-bold">HTML & CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <div class="pt-6 mt-6 border-t border-white/60 text-center relative z-10 flex flex-col sm:flex-row items-center justify-between gap-3">
                 <p class="font-mono text-xs text-slate-600 tracking-wider font-medium">
                     M. Riffat Akhtar Rizky Sofyan • XII TKJ B • 2026
                 </p>
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+                    <span class="font-mono text-xs text-slate-700 font-semibold">Ready for Future IT Career</span>
+                </div>
             </div>
 
         </div>
@@ -211,6 +388,26 @@
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
+
+        // Tab Switching Logic
+        function switchTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(el => {
+                el.classList.add('hidden');
+            });
+            // Remove active class from all buttons
+            document.querySelectorAll('.nav-tab').forEach(el => {
+                el.classList.remove('active');
+            });
+
+            // Show selected tab content
+            document.getElementById('tab-' + tabId).classList.remove('hidden');
+            // Add active class to clicked button
+            document.getElementById('btn-' + tabId).classList.add('active');
+            
+            // Re-initialize icons in case any rendered dynamically
+            lucide.createIcons();
+        }
     </script>
 </body>
 </html>
